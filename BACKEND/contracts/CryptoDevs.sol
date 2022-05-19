@@ -63,7 +63,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
             "Presale not Started"
         );
         require(
-            whitelist.whitelistedAddresses(msg.sender),
+            whitelist.WhitlistedAddresses(msg.sender),
             "You Are Not whitelisted"
         );
         require(tokenIds < maxTokenIds, "Exceeded Max CryptoDevs supply");
