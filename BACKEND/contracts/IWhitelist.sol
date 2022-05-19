@@ -3,6 +3,6 @@ pragma solidity ^0.8.4;
 
 interface IWhitelist {
 
-    function WhitlistedAddresses(address) external view returns(bool);
+    function whitlistedAddresses(address) external view returns(bool);
     
 }
